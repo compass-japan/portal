@@ -1,0 +1,66 @@
+.booknews{
+    background: #eee;
+    width: 96%;
+    padding: 10px 2%;
+}
+
+.select{
+    margin-top: 20px;
+}
+
+
+.books{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #aaa;
+    padding: 10px;
+}
+
+.book{
+    width: 49%;
+    display: grid;
+    grid-template-columns: 44% 28% 28%;
+    grid-template-rows: 30px 130px 30px;
+    background: #eee;
+    margin-top:10px;
+    overflow: hidden;
+    border: solid 1px #555;
+}
+.noselect{
+    background: #eee;
+    min-height: 200px;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.book_img{
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    grid-row-start: 1; 
+    grid-row-end: 4; 
+}
+.book h3{
+    grid-column-start: 2; 
+    grid-column-end: 4; 
+    grid-row-start: 1; 
+    grid-row-end: 2;  
+    padding: 5px;
+    
+}
+.book .compass{
+    grid-column-start: 2; 
+    grid-column-end: 3; 
+    grid-row-start: 2; 
+    grid-row-end: 3;     
+}
+
+.book .amazon{
+    grid-column-start: 3;
+    grid-column-end: 4; 
+    grid-row-start: 2; 
+    grid-row-end: 3;     
+}
