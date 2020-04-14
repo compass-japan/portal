@@ -1,11 +1,8 @@
 <?php
 use Cartalyst\Sentinel\Native\Facades\Sentinel;
 use Illuminate\Database\Capsule\Manager as Capsule;
-require("../../portal_php/use_sentinel.php");
-//上記　sentinel使用表記
 
-
-
+require 'require/use_sentinel.php';
 
 if(Sentinel::check()){
     $user = Sentinel :: getUser();
@@ -33,6 +30,7 @@ if(isset($_POST['sche_id'])){
        <main>
            <section>
                <div class="calender">
+			   <p><?php echo $user["first_name"]."さんろぐいんちゅう"; ?></p>
                    <?php
                         include("schedule.php");
                    ?>
