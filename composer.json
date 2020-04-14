@@ -1,0 +1,8 @@
+{
+    "require": {
+        "cartalyst/sentinel": "^4.0",
+        "illuminate/database": "^7.5",
+        "illuminate/events": "^7.5",
+        "symfony/http-foundation": "^5.0"
+    }
+}
